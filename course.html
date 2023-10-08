@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softnik Courses</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+
+<!-- <link rel="stylesheet" href="./scss/main.css"> -->
+
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://i.imgur.com/ZkK946D.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.4);
+}
+section #nav {
+  background: rgba(0, 0, 0, 0.3);
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+section #nav a {
+  text-decoration: none;
+  text-align: center;
+  margin: 2vh 1%;
+  width: 10%;
+  font-family: "Baloo 2", cursive;
+  color: white;
+  cursor: pointer;
+}
+section #nav a h2 {
+  border-radius: 50px;
+  padding: 5px;
+}
+section #nav a h2:hover {
+  color: black;
+  background-color: white;
+}
+
+#maindiv {
+  display: flex;
+  height: 90vh;
+}
+#maindiv #listdiv {
+  width: 45%;
+}
+#maindiv #listdiv h2 {
+  color: red;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+#maindiv #listdiv p {
+  margin: 1% 10%;
+  font-size: large;
+  color: white;
+}
+#maindiv #listdiv p:hover {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#maindiv #showdiv {
+  display: none;
+  background: rgba(187, 186, 186, 0.8);
+  width: 55%;
+  animation: showcourse 3s ease-out;
+}
+#maindiv #showdiv h2 {
+  color: red;
+  text-align: center;
+  margin-top: 1%;
+}
+#maindiv #showdiv h2:nth-child(2) {
+  margin-top: 2%;
+  text-decoration: underline;
+  color: black;
+  margin-bottom: 3%;
+}
+#maindiv #showdiv p {
+  text-align: center;
+}
+#maindiv #showdiv h3 {
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 1%;
+  font-size: 130%;
+  text-align: center;
+}
+
+#mswin {
+  display: flex;
+  width: 100%;
+  height: 30%;
+}
+#mswin div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+#mswin div h3 {
+  border: 1px solid grey;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-size: 130%;
+  text-align: center;
+}
+#mswin div p:first-child {
+  margin-top: 10%;
+}
+
+#frt {
+  display: flex;
+  width: 100%;
+  height: 30%;
+}
+#frt div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+#frt div h3 {
+  border: 1px solid grey;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-size: 130%;
+  text-align: center;
+}
+
+#courses {
+  color: black;
+  background-color: white;
+}
+
+@keyframes showcourse {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+</style>
+
+</head>
+<body>
+
+    <section>
+        <nav id="nav">
+            <a href="index.html"><h2 id="home">HOME</h2></a>
+            <a href="course.html"><h2 id="courses">COURSES</h2></a>
+            <a href="https://instantedit.000webhostapp.com/index2.html"><h2 id="aboutus">ABOUT US</h2></a>
+            <a href="contact.html"><h2 id="contactus">CONTACT US</h2></a>
+        </nav>
+
+        <div id="maindiv">
+            <div id="listdiv">
+                <h2>Courses List</h2>
+                <p id="dca">Diploma in Computer Application(DCA)</p>
+                <p id="dcaa">Diploma in Computer Application & Accounting(DCAA)</p>
+                <p id="adca">Advance Diploma in Computer Application(ADCA)</p>
+               
+               
+
+            </div>
+
+            <div id="showdiv">
+                <h2>Course Details</h2>
+
+                <h2 id="coursename">Course name will be here</h2>
+            
+
+                <div id="mswin">
+                    <div id="win">
+                        <h3>WINDOW</h3>
+                        <p>MS Paint</p>
+                        <p>Notepad - English Typing</p>
+                        <p>Wordpad</p>
+
+                    </div>
+                    <div id="ms">
+                        <h3>MS OFFICE</h3>
+                        <p>MS Word</p>
+                        <p>MS Excel</p>
+                        <p>MS Powerpoint</p>
+                    </div>
+                </div>
+
+                <div id="frt">
+                    <div id="tally">
+                        <h3 id="tname">TALLY</h3>
+                        <p id="t1">Tally Prime </p>
+                        <p id="t2">Tally ERP9</p>
+                        <p id="t3">Accounts + Gst</p>
+                        <p id="t4"></p>
+
+                    </div>
+                    <div id="graphics">
+                        <h3 id="grname">GRAPHICS</h3>
+                        <p id="gp1">Photoshop</p>
+                        <p id="gp2">Corel</p>
+                        <p id="gp3">Illustrator</p>
+                        <p id="gp4">After Effect</p>
+                    </div>
+                </div>
+
+            
+                <h3>ONLINE WORK</h3>
+                <h3 id="fee">PER MONTH FEE : -----</h3>
+                <h3 id="duration">COURSE DURATION : -----</h3>
+                <h3>Mon - Sat : 2 Hrs Class</h3>
+
+            </div>
+
+    </div>
+    
+    <script>
+      
+        var dca = document.getElementById("dca");
+        var dcaa = document.getElementById("dcaa");
+        var adca = document.getElementById("adca");
+
+        var frt = document.getElementById("frt");
+        var tally = document.getElementById("tally");
+        var tname = document.getElementById("tname");
+        var t1 = document.getElementById("t1");
+        var t2 = document.getElementById("t2");
+        var t3 = document.getElementById("t3");
+        var t4 = document.getElementById("t4");
+
+        var graphics = document.getElementById("graphics");
+        var grname = document.getElementById("grname");
+        var gp1 = document.getElementById("gp1");
+        var gp2 = document.getElementById("gp2");
+        var gp3 = document.getElementById("gp3");
+        var gp4 = document.getElementById("gp4");
+
+        var coursename = document.getElementById("coursename");
+        var fee = document.getElementById("fee");
+        var duration = document.getElementById("duration");
+
+         
+    
+        function coursedetails(cnames,fees,durations ,tnames ,t1s , t2s , t3s ,t4s, grnames, g1s ,g2s, g3s, g4s ) {
+            coursename.innerHTML = cnames;
+            
+            fee.innerHTML=fees;
+            duration.innerHTML = durations;
+
+            tname.innerHTML = tnames;
+            t1.innerHTML = t1s;
+            t2.innerHTML = t2s;
+            t3.innerHTML = t3s;
+            t4.innerHTML = t4s;
+
+            grname.innerHTML = grnames;
+            g1.innerHTML = g1s;
+            g2.innerHTML = g2s;
+            g3.innerHTML = g3s;
+            g4.innerHTML = g4s;
+
+
+
+        }
+
+       
+        dca.onclick = function () {
+            // alert("hii");
+            showdiv.style.display ="block";
+            graphics.style.display = "none";
+            tally.style.width ="100%";
+            coursedetails("Diploma in Computer Application","PER MONTH FESS : 1250/-","COURSE DURATION : 6Months","FRONT END","HTML","CSS"," "," ","","","","","");
+        }
+        dcaa.onclick = function () {
+            // alert("hii");
+            showdiv.style.display ="block";
+            graphics.style.display = "none";
+            tally.style.width ="100%";
+            coursedetails("Diploma in Computer Application & Accountings","PER MONTH FESS : 1250/-","COURSE DURATION : 6Months","TALLY","TALLY PRIME","TALLY ERP 9","ACCOUNTING + GST", " "," "," "," "," "," ");
+            
+        }
+        adca.onclick = function () {
+            // alert("hii");
+            showdiv.style.display ="block";
+            tally.style.width ="50%";
+            graphics.style.display = "block";
+           
+            coursedetails("Advance Diploma in Computer Application","PER MONTH FESS : 1500/-","COURSE DURATION : 6Months","FRONT END","HTML","CSS","", "","PHOTOSHOP","COREL","ILLUSTRATOR","AFTER EFFECTS");
+            
+        }
+
+     
+
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softnik Coaching Center</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://i.imgur.com/RAhqnw4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color;
+}
+section #nav {
+  background: rgba(0, 0, 0, 0.3);
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+
+section #nav a {
+  text-decoration: none;
+  text-align: center;
+  margin: 2vh 1%;
+  width: 10%;
+  font-family: "Baloo 2", cursive;
+  color: white;
+  cursor: pointer;
+}
+section #nav a h2 {
+  border-radius: 50px;
+  padding: 5px;
+}
+section #nav a h2:hover {
+  color: black;
+  background-color: white;
+}
+
+section div {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+}
+section p {
+  width: 65%;
+  text-align: center;
+  font-size: 150%;
+  color: white;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation-delay: 5s;
+  animation: typing 5s steps(60, end);
+  margin-top: 8%;
+}
+
+#imgcontainer {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+#imgcontainer h1 {
+  background-image: url(https://i.imgur.com/LB4Nvho.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+  font-family: "Baloo 2" cursive;
+  color: transparent;
+  font-size: 650%;
+  font-weight: bold;
+  position: absolute;
+  translate: 12% 65%;
+  animation-delay: 1s;
+  animation: g 4s;
+}
+#imgcontainer img {
+  margin-left: 2%;
+  margin-top: 3%;
+  width: 98%;
+  height: 100%;
+  background-position: center;
+  background-color: transparent;
+  filter: drop-shadow(0px 10px 30px rgb(195, 255, 0));
+  animation: imgshow 1s ease-in-out;
+}
+
+@keyframes g {
+  0% {
+    opacity: 0;
+    translate: 200% 65%;
+  }
+  30% {
+    opacity: 100;
+  }
+  50% {
+    translate: 0% 65%;
+  }
+  75% {
+    translate: 25% 65%;
+  }
+  100% {
+    translate: 12% 65%;
+  }
+}
+/* The typing effect */
+@keyframes typing {
+  0% {
+    opacity: 0%;
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes imgshow {
+  0% {
+    margin-top: 30%;
+    filter: none;
+  }
+  70% {
+    filter: none;
+  }
+  100% {
+    filter: drop-shadow(0px 10px 30px rgb(255, 255, 255));
+    margin-top: 3%;
+  }
+}
+
+
+#home{
+    color: black;
+    background-color: white;
+  }
+</style>
+
+</head>
+<body>
+    
+
+
+<section>
+    <nav id="nav">
+        <a href="index.html"><h2 id="home">HOME</h2></a>
+        <a href="course.html"><h2 id="courses">COURSES</h2></a>
+        <a href="https://instantedit.000webhostapp.com/index2.html"><h2 id="aboutus">ABOUT US</h2></a>
+        <a href="contact.html"><h2 id="contactus">CONTACT US</h2></a>
+    </nav>
+    <div id="textcontainer">
+<!-- <h1>Softnik Comouter Classes</h1> -->
+<p>"Unlock Your Potential with Softnik Where Tech Dreams Take Flight!"</p>
+    </div>
+    <div id="imgcontainer">
+        <h1>Softnik Comoputer Classes</h1>
+<img src="https://i.imgur.com/dbEjAZf.png" alt="">
+    </div>
+</section>
+
+
+<script>
+    var home = document.getElementById("home");
+    var courses = document.getElementById("courses");
+    var aboutus = document.getElementById("aboutus");
+    var contactus = document.getElementById("contactus");
+
+    home.onclick = function(){
+        window.location("index.html");
+    }
+</script>
+
+</body>
+</html>
