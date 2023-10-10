@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softnik Coaching Center</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://i.imgur.com/RAhqnw4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color;
+}
+section #nav {
+  background: rgba(0, 0, 0, 0.3);
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+section #nav a {
+  text-decoration: none;
+  text-align: center;
+  margin: 2vh 1%;
+  margin-top: 1.5%;
+  width: 10vw;
+  font-family: "Baloo 2", cursive;
+  color: white;
+  cursor: pointer;
+}
+section #nav a:last-child {
+  margin-right: 25%;
+}
+section #nav a h2 {
+  font-size: 150%;
+  border-radius: 50px;
+  padding:1%;
+}
+section #nav a h2:hover {
+  color: black;
+  background-color: white;
+}
+nav span{
+padding: 0.2%;
+  width: 12%;
+  margin-right: 12%;
+  }
+
+  nav span img{
+    
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 100%;
+    height: 100%;
+  }
+
+section div {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section p {
+  width: 65%;
+  text-align: center;
+  font-size: 150%;
+  color: white;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation-delay: 5s;
+  animation: typing 5s steps(60, end);
+  /* margin-top:; */
+}
+
+#imgcontainer {
+  
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+
+#imgcontainer img {
+  
+  margin-top: 3%;
+  width: auto;
+  height: 100%;
+  background-position: center;
+  background-color: transparent;
+  filter: drop-shadow(0px 10px 30px rgb(195, 255, 0));
+  animation: imgshow 1s ease-in-out;
+}
+
+@keyframes g {
+  0% {
+    opacity: 0;
+    translate: 200% 65%;
+  }
+  30% {
+    opacity: 100;
+  }
+  50% {
+    translate: 0% 65%;
+  }
+  75% {
+    translate: 25% 65%;
+  }
+  100% {
+    translate: 12% 65%;
+  }
+}
+/* The typing effect */
+@keyframes typing {
+  0% {
+    opacity: 0%;
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes imgshow {
+  0% {
+    margin-top: 30%;
+    filter: none;
+  }
+  70% {
+    filter: none;
+  }
+  100% {
+    filter: drop-shadow(0px 10px 30px rgb(255, 255, 255));
+    margin-top: 3%;
+  }
+}
+
+
+#home{
+    color: black;
+    background-color: white;
+  }
+
+
+
+  #divimg{
+    height: 55%;
+    width: auto;
+    animation: logo 2s;
+  }
+
+  #softh1{
+    font-family: Ballo2,cursive; color: white; font-size:2x; margin-bottom: 1%;animation: logo 3s;
+  }
+  #navneetp{
+  margin-right: 2%;  position: absolute;left:auto;right:auto;bottom: 3%;z-index: 1;text-decoration: underline;color: white;font-family: 'Nothing You Could Do', cursive;font-weight: bold;
+}
+
+  @keyframes logo {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 100%;
+    }
+  }
+
+
+  @media screen and (max-width: 800px) {
+
+    section #nav a {
+      width: 18%;
+  font-size: 60%;
+  margin-top: 2%;
+  
+  
+}
+    section #nav a h2{
+      width: 100%;
+  font-size: 60%;
+}
+    section #nav a:last-child {
+      margin-right: 0;
+}
+nav span{
+  display: none;
+}
+#softh1{
+    font-family: Ballo2,cursive; color: white; font-size:90%; margin-bottom: 1%;animation: logo 3s;
+  }
+  #poten{
+  font-size: 50%;
+  white-space: wrap;
+  overflow: auto;
+}
+#navneetp{
+ font-size: 50%;
+}
+}
+
+
+</style>
+
+</head>
+<body>
+    
+
+
+<section>
+    <nav id="nav">
+     <span> <img src="https://i.imgur.com/23kaRTx.png" alt="#" ></span>
+        <a href="index.html"><h2 id="home">HOME</h2></a>
+        <a href="course.html"><h2 id="courses">COURSES</h2></a>
+        <a href="about.html"><h2 id="aboutus">ABOUT US</h2></a>
+        <a href="contact.html"><h2 id="contactus">CONTACT US</h2></a>
+    </nav>
+    <div id="textcontainer" style="overflow: visible;">
+<!-- <h1>Softnik Comouter Classes</h1> -->
+<!--  -->
+<img src="https://i.imgur.com/23kaRTx.png" alt="#" id="divimg">
+<h1 id="softh1" >Softnik Coaching Classes</h1>
+<p id="poten">"Unlock Your Potential with Softnik Where Tech Dreams Take Flight!"</p>
+    </div>
+    <div id="imgcontainer">
+      <p id="navneetp" style="  margin-right: 2%;  position: absolute;left:auto;right:auto;bottom: 3%;z-index: 1;text-decoration: underline;color: white;font-family: 'Nothing You Could Do', cursive;font-weight: bold;">Navneet Singh</p>
+<img src="https://i.imgur.com/dbEjAZf.png" alt="">
+
+    </div>
+</section>
+
+
+<script>
+    var home = document.getElementById("home");
+    var courses = document.getElementById("courses");
+    var aboutus = document.getElementById("aboutus");
+    var contactus = document.getElementById("contactus");
+
+  
+</script>
+
+</body>
+</html>
