@@ -451,195 +451,188 @@
     
 
     <script>
-      
 
-      
-        
+      var showdiv = document.getElementById("showdiv");
+      var showdiv2 = document.getElementById("showdiv2");
+      var showdiv6 = document.getElementById("showdiv6");
+      var showdiv8 = document.getElementById("showdiv8");
+      var showdiv10 = document.getElementById("showdiv10");
+      var showdiv12 = document.getElementById("showdiv12");
+      var showdiv14 = document.getElementById("showdiv14");
 
+      var dca = document.getElementById("dca");
+      var dcaa = document.getElementById("dcaa");
+      var adca = document.getElementById("adca");
 
-        var dca = document.getElementById("dca");
-        var dcaa = document.getElementById("dcaa");
-        var adca = document.getElementById("adca");
+      var frt = document.getElementById("frt");
+      var tally = document.getElementById("tally");
+      var tname = document.getElementById("tname");
+      var t1 = document.getElementById("t1");
+      var t2 = document.getElementById("t2");
+      var t3 = document.getElementById("t3");
+      var t4 = document.getElementById("t4");
 
-        var frt = document.getElementById("frt");
-        var tally = document.getElementById("tally");
-        var tname = document.getElementById("tname");
-        var t1 = document.getElementById("t1");
-        var t2 = document.getElementById("t2");
-        var t3 = document.getElementById("t3");
-        var t4 = document.getElementById("t4");
+      var graphics = document.getElementById("graphics");
+      var grname = document.getElementById("grname");
+      var gp1 = document.getElementById("gp1");
+      var gp2 = document.getElementById("gp2");
+      var gp3 = document.getElementById("gp3");
+      var gp4 = document.getElementById("gp4");
 
-        var graphics = document.getElementById("graphics");
-        var grname = document.getElementById("grname");
-        var gp1 = document.getElementById("gp1");
-        var gp2 = document.getElementById("gp2");
-        var gp3 = document.getElementById("gp3");
-        var gp4 = document.getElementById("gp4");
-
-        var coursename = document.getElementById("coursename");
-        var fee = document.getElementById("fee");
-        var duration = document.getElementById("duration");
-
-         
-    
-        function coursedetails(cnames,fees,durations ,tnames ,t1s , t2s , t3s ,t4s, grnames, g1s ,g2s, g3s, g4s ) {
-            coursename.innerHTML = cnames;
-            
-            fee.innerHTML=fees;
-            duration.innerHTML = durations;
-
-            tname.innerHTML = tnames;
-            t1.innerHTML = t1s;
-            t2.innerHTML = t2s;
-            t3.innerHTML = t3s;
-            t4.innerHTML = t4s;
-
-            grname.innerHTML = grnames;
-            g1.innerHTML = g1s;
-            g2.innerHTML = g2s;
-            g3.innerHTML = g3s;
-            g4.innerHTML = g4s;
+      var coursename = document.getElementById("coursename");
+      var fee = document.getElementById("fee");
+      var duration = document.getElementById("duration");
 
 
 
-        }
+      function coursedetails(cnames, fees, durations, tnames, t1s, t2s, t3s, t4s, grnames, g1s, g2s, g3s, g4s) {
+        coursename.innerHTML = cnames;
 
-        function displaynone() {
-          showdiv.style.display="none";
-          showdiv2.style.display="none";
-          showdiv4.style.display="none";
-          showdiv6.style.display="none";
-          showdiv8.style.display="none";
-          showdiv10.style.display="none";
-          showdiv12.style.display="none";
-          showdiv14.style.display="none";
-        
-        }
+        fee.innerHTML = fees;
+        duration.innerHTML = durations;
 
-      
-       
-        dca.onclick = function () {
-          displaynone();
-          texthiglight();
-       txtunder(dca);
-            showdiv.style.display ="block";
-            graphics.style.display = "none";
-            tally.style.width ="100%";
-            coursedetails("Diploma in Computer Application","PER MONTH FESS : 1250/-","COURSE DURATION : 6Months","FRONT END","HTML","CSS"," "," ","","","","","");
-        }
-        dcaa.onclick = function () {
-          displaynone();
-          texthiglight();
-       txtunder(dcaa);
-            showdiv.style.display ="block";
-            graphics.style.display = "none";
-            tally.style.width ="100%";
-            coursedetails("Diploma in Computer Application & Accountings","PER MONTH FESS : 1250/-","COURSE DURATION : 6Months","TALLY","TALLY PRIME","TALLY ERP 9","ACCOUNTING + GST", " "," "," "," "," "," ");
-            
-        }
-        adca.onclick = function () {
-          displaynone();
-          texthiglight();
-       txtunder(adca);
-            showdiv.style.display ="block";
-            tally.style.width ="50%";
-            graphics.style.display = "block";
-           
-            coursedetails("Advance Diploma in Computer Application","PER MONTH FESS : 1500/-","COURSE DURATION : 1 Years","FRONT END","HTML","CSS","", "", "GRAPHICS","PHOTOSHOP","COREL","ILLUSTRATOR","AFTER EFFECTS");
-          
-        }
-       
-       
-       
-        var prlang =document.getElementById("prlang");
-        var crs1 = document.getElementById("crs1");
-        var crs2 = document.getElementById("crs2");
-        var crs3 = document.getElementById("crs3");
-        var crs4 = document.getElementById("crs4");
-        var crs5 = document.getElementById("crs5");
-        var crs6 = document.getElementById("crs6");
-        
-        var showdiv = document.getElementById("showdiv");
-       var showdiv2 = document.getElementById("showdiv2");
-       var showdiv6 = document.getElementById("showdiv6");
-       var showdiv8 = document.getElementById("showdiv8");
-       var showdiv10 = document.getElementById("showdiv10");
-       var showdiv12 = document.getElementById("showdiv12");
-       var showdiv14 = document.getElementById("showdiv14");
+        tname.innerHTML = tnames;
+        t1.innerHTML = t1s;
+        t2.innerHTML = t2s;
+        t3.innerHTML = t3s;
+        t4.innerHTML = t4s;
+
+        grname.innerHTML = grnames;
+        gp1.innerHTML = g1s;
+        gp2.innerHTML = g2s;
+        gp3.innerHTML = g3s;
+        gp4.innerHTML = g4s;
+
+      }
 
 
-       function texthiglight() {
-        dca.style.color="white";
-        dcaa.style.color="white";
-        adca.style.color="white";
-        prlang.style.color="white";
-        crs1.style.color="white";
-        crs2.style.color="white";
-        crs3.style.color="white";
-        crs4.style.color="white";
-        crs5.style.color="white";
-        crs6.style.color="white";
-       }
+      function displaynone() {
+        showdiv.style.display = "none";
+        showdiv2.style.display = "none";
+        showdiv4.style.display = "none";
+        showdiv6.style.display = "none";
+        showdiv8.style.display = "none";
+        showdiv10.style.display = "none";
+        showdiv12.style.display = "none";
+        showdiv14.style.display = "none";
 
-       function txtunder(x) {
-        x.style.color="blue";
-        x.style.textDecoration="underline";
-       }
+      }
 
+      function texthigh() {
+        dca.style.color = "white";
+        dcaa.style.color = "white";
+        adca.style.color = "white";
+        prlang.style.color = "white";
+        crs1.style.color = "white";
+        crs2.style.color = "white";
+        crs3.style.color = "white";
+        crs4.style.color = "white";
+        crs5.style.color = "white";
+        crs6.style.color = "white";
+        dca.style.textDecoration = "none";
+        dcaa.style.textDecoration = "none";
+        adca.style.textDecoration = "none";
+        prlang.style.textDecoration = "none";
+        crs1.style.textDecoration = "none";
+        crs2.style.textDecoration = "none";
+        crs3.style.textDecoration = "none";
+        crs4.style.textDecoration = "none";
+        crs5.style.textDecoration = "none";
+        crs6.style.textDecoration = "none";
 
-       prlang.onclick = function(){
+      }
+
+      function txtunder(x) {
+        texthigh();
+        x.style.color = "blue";
+        x.style.textDecoration = "underline";
+      }
+
+      dca.onclick = function () {
         displaynone();
-        texthiglight();
-       txtunder(prlang);
-showdiv4.style.display = "flex";
-showdiv4.style.flexDirection = "column";
-        }
-        
 
-        crs1.onclick = function(){
-          displaynone();
-          texthiglight();
-          txtunder(crs1);
-showdiv6.style.display = "flex";
-showdiv6.style.flexDirection = "column";
-        }
+        showdiv.style.display = "block";
+        graphics.style.display = "none";
+        tally.style.width = "100%";
+        coursedetails("Diploma in Computer Application", "PER MONTH FESS : 1250/-", "COURSE DURATION : 6Months", "FRONT END", "HTML", "CSS", " ", " ", "", "", "", "", "");
+        txtunder(dca);
+      }
+      
+      dcaa.onclick = function () {
+        displaynone();
 
-        crs2.onclick = function(){
-          displaynone();
-          texthiglight();
-          txtunder(crs2);
-showdiv2.style.display = "flex";
-        }
-        crs3.onclick = function(){
-          displaynone();
-          texthiglight();
-          txtunder(crs3);
-showdiv8.style.display = "flex";
-        }
-        crs4.onclick = function(){
-          displaynone();
-          texthiglight();
-          txtunder(crs4);
-showdiv10.style.display = "flex";
-        }
-        crs5.onclick = function(){
-          displaynone();
-          texthiglight();
-          txtunder(crs5);
-showdiv12.style.display = "flex";
-        }
-        crs6.onclick = function(){
-          displaynone();
-          texthiglight();
-          txtunder(crs6);
-showdiv14.style.display = "flex";
-        }
 
-     
+        showdiv.style.display = "block";
+        graphics.style.display = "none";
+        tally.style.width = "100%";
+        coursedetails("Diploma in Computer Application & Accountings", "PER MONTH FESS : 1250/-", "COURSE DURATION : 6Months", "TALLY", "TALLY PRIME", "TALLY ERP 9", "ACCOUNTING + GST", " ", " ", " ", " ", " ", " ");
+        txtunder(dcaa);
 
-     
+      }
+      
+      adca.onclick = function () {
+        displaynone();
+        coursedetails("Advance Diploma in Computer Application", "PER MONTH FESS : 1500/-", "COURSE DURATION : 1 Years", "FRONT END", "HTML", "CSS", "", "", "GRAPHICS", "PHOTOSHOP", "COREL", "ILLUSTRATOR", "AFTER EFFECTS");
 
-        
+        showdiv.style.display = "block";
+        tally.style.width = "50%";
+        graphics.style.display = "block";
+
+
+        txtunder(adca);
+      }
+
+      var prlang = document.getElementById("prlang");
+      var crs1 = document.getElementById("crs1");
+      var crs2 = document.getElementById("crs2");
+      var crs3 = document.getElementById("crs3");
+      var crs4 = document.getElementById("crs4");
+      var crs5 = document.getElementById("crs5");
+      var crs6 = document.getElementById("crs6");
+
+      prlang.onclick = function () {
+        displaynone();
+        showdiv4.style.display = "flex";
+        showdiv4.style.flexDirection = "column";
+        txtunder(prlang);
+      }
+
+      crs1.onclick = function () {
+        displaynone();
+        showdiv6.style.display = "flex";
+        showdiv6.style.flexDirection = "column";
+        txtunder(crs1);
+      }
+
+      crs2.onclick = function () {
+        displaynone();
+        showdiv2.style.display = "flex";
+        txtunder(crs2);
+      }
+      
+      crs3.onclick = function () {
+        displaynone();
+        showdiv8.style.display = "flex";
+        txtunder(crs3);
+      }
+      
+      crs4.onclick = function () {
+        displaynone();
+        showdiv10.style.display = "flex";
+        txtunder(crs4);
+      }
+      
+      crs5.onclick = function () {
+        displaynone();
+        showdiv12.style.display = "flex";
+        txtunder(crs5);
+      }
+      
+      crs6.onclick = function () {
+        displaynone();
+        showdiv14.style.display = "flex";
+        txtunder(crs6);
+      }
 
 
     </script>
