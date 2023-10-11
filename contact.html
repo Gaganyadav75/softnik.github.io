@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softnik Contact Info</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    
+
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://i.imgur.com/aYZezjN.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.4);
+}
+section #nav {
+  /* background: rgba(0, 0, 0, 0.3); */
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+section #nav a {
+  text-decoration: none;
+  text-align: center;
+  margin: 2vh 1%;
+  margin-top: 1.5%;
+  width: 10vw;
+  font-family: "Baloo 2", cursive;
+  color: white;
+  cursor: pointer;
+}
+section #nav a:last-child {
+  margin-right: 25%;
+}
+section #nav a h2 {
+  font-size: 150%;
+  border-radius: 50px;
+  padding:1%;
+}
+section #nav a h2:hover {
+  color: black;
+  background-color: white;
+}
+nav span{
+padding: 0.2%;
+  width: 12%;
+  margin-right: 12%;
+  }
+
+  nav span img{
+    
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 100%;
+    height: 100%;
+  }
+section #maindiv {
+  height: 90vh;
+  display: flex;
+}
+section .indiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+}
+section .indiv h2 {
+  color: white;
+  margin-left: 30%;
+  font-size: 180%;
+  color: red;
+}
+section .indiv input {
+  margin-bottom: 1%;
+  font-size: 130%;
+  width: 60%;
+  height: 5%;
+}
+section .indiv textarea {
+  font-size: 130%;
+  width: 60.3%;
+  resize: none;
+  margin-bottom: 1%;
+}
+section .indiv button {
+  font-size: 150%;
+  width: 20%;
+  margin-bottom: 15%;
+}
+section .indiv button:hover {
+  background-color: green;
+  color: white;
+}
+section #div2 {
+  justify-content: center;
+  align-items: center;
+}
+section #div2 h2 {
+  color: rgb(0, 13, 255);
+  margin-left: 0;
+  margin-bottom: 5%;
+}
+
+
+#contactus{
+    color: black;
+    background-color: white;
+  }
+
+  #sheetdb-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sheetdb-form input{
+    height: 20%;
+  }
+
+  #sheetdb-form textarea{
+    height: 50%;
+  }
+
+
+  .sp{
+    color: rgb(255, 255, 255);
+  }
+  .sp:last-child{
+    margin-bottom: 10%; 
+  }
+
+  #div1 h1{
+    color: blue;text-align: center;margin-bottom: 5%;font-size: 180%;
+  }
+
+
+  @media screen and (max-width: 800px) {
+
+    section #nav{
+      height: 15vh;
+    }
+
+section #nav a {
+  width: 20%;
+font-size:6vw;
+margin-top: 3vh;
+
+
+}
+section #nav a h2{
+  width: 100%;
+font-size: 60%;
+}
+section #nav a:last-child {
+  margin-right: 0;
+}
+nav span{
+display: none;
+}
+
+section #maindiv {
+  height: 85vh;
+}
+
+#maindiv{
+    flex-direction: column;
+  }
+  #maindiv #div1{
+width: 100%;
+  }
+  #maindiv #div1 h1{
+margin-top: 2%;
+font-size: 8vw;
+  }
+  #maindiv h2{
+
+font-size: 8vw;
+  }
+  #maindiv #div1 h2{
+margin: auto;
+font-size: 4vw;
+  }
+  #maindiv #div2{
+    width: 100%;
+  }
+
+  #maindiv #div2 input{
+    
+    font-size: 4vw;
+  }
+  #maindiv #div2 textarea{
+    
+    font-size: 4vw;
+  }
+  #maindiv #div2 button{
+    
+    font-size: 5vw;
+  }
+
+
+
+
+}
+ 
+
+
+  
+    </style>
+</head>
+<body>
+
+    <section>
+      <nav id="nav">
+        <span> <img src="https://i.imgur.com/23kaRTx.png" alt="#" ></span>
+           <a href="index.html"><h2 id="home">HOME</h2></a>
+           <a href="course.html"><h2 id="courses">COURSES</h2></a>
+           <a href="about.html"><h2 id="aboutus">ABOUT US</h2></a>
+           <a href="contact.html" id="cont"><h2 id="contactus">CONTACT US</h2></a>
+       </nav>
+
+        <div id="maindiv">
+
+            <div id="div1" class="indiv" style="padding-bottom: 9%;">
+                <h1 >Contact Details</h1>
+                <h2><span  class="sp" >Mobile No. :</span> 7011079660</h2>
+                <h2><span class="sp" >Whatsapp‎ ‎ :</span> 7011079660</h2>
+                <h2><span class="sp" >Email Id‎ ‎ ‎ ‎ ‎ :</span> softnik@gmail.com</h2>
+                <h2><span class="sp">Website‎ ‎ ‎ ‎ ‎ ‎   :</span> www.softnikcomputers.com</h2>
+
+            </div>
+
+            <div id="div2" class="indiv">
+                <h2>Leave a Message</h2>
+
+                <form action="https://sheetdb.io/api/v1/ehf3p5np244e8" id="sheetdb-form" method="post">
+
+                <input type="text" placeholder="Name" name="data[Name]" id="name" required>
+                <input type="number" placeholder="Mobile No." name="data[Mobile]" id="mob" required="required" maxlength="10">
+                <textarea name="data[Message]" id="mess" cols="30" rows="5" placeholder="Message" ></textarea>
+                <button type="submit" name="submit" id="submit">Submit</button>
+
+              </form>
+
+            </div>
+
+        </div>
+
+        </section>
+    
+</body>
+
+<script>
+  var az = /[a-z]/;
+
+
+ var form = document.getElementById('sheetdb-form');
+ form.addEventListener('submit', e=>{ 
+  
+  e.preventDefault()
+     
+     fetch(form.action, { method: 'POST', body: new FormData(document.getElementById('sheetdb-form'))})
+       .then(response => {
+         response.json()
+         })
+       .then(res => {
+   alert("Message sent sucessfully")
+
+       }
+       )
+ })
+
+
+
+</script>
+</html>

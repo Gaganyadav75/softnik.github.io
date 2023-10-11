@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: url(https://i.imgur.com/0iw6P0n.jpg);
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  section #nav {
+    /* background: rgba(0, 0, 0, 0.3); */
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+  }
+  section #nav a {
+    text-decoration: none;
+    text-align: center;
+    margin: 2vh 1%;
+    margin-top: 1.5%;
+    width: 10vw;
+    font-family: "Baloo 2", cursive;
+    color: white;
+    cursor: pointer;
+  }
+  section #nav a:last-child {
+    margin-right: 25%;
+  }
+  section #nav a h2 {
+    font-size: 1.5vw;
+    border-radius: 50px;
+    padding:1%;
+  }
+  section #nav a h2:hover {
+    color: black;
+    background-color: white;
+  }
+  nav span{
+  padding: 0.2%;
+    width: 12%;
+    margin-right: 12%;
+    }
+  
+    nav span img{
+      
+      margin-top: 5%;
+      margin-bottom: 10%;
+      width: 100%;
+      height: 100%;
+    }
+  
+  #maindiv {
+    display: flex;
+    height: 89vh;
+    margin-top: 1vh;
+  }
+  #maindiv #listdiv {
+    width: 45vw;
+   
+  }
+  #maindiv #listdiv h2 {
+    color: red;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 80%;
+  }
+  #maindiv #listdiv p {
+    margin: 1% 10%;
+    font-size: 1.3vw;
+    color: white;
+    width: 80%;
+  }
+  #maindiv #listdiv p:hover {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  #listdiv p{
+    overflow: hidden;
+      white-space: nowrap;
+  }
+  #dca{
+     
+      animation: typing 0.5s steps(60, end);
+    }
+    #dcaa{
+    
+      animation: width0 0.5s,typing 0.5s steps(60, end) 0.5s ;
+    }
+    #adca{
+     
+    
+      animation: width0 1s,typing 0.5s steps(60, end) 1s ;
+    }
+  
+    #prlang{
+      animation: width0 1.5s,typing 0.5s steps(40, end) 1.5s ;
+    }
+  
+    #crs1{
+  animation: width0 2s,typing 0.5s steps(30, end) 2s ;
+    }
+    #crs2{
+  animation: width0 2.5s,typing 0.5s steps(30, end) 2.5s ;
+    }
+    #crs3{
+  animation: width0 3s,typing 0.5s steps(30, end) 3s ;
+    }
+    #crs4{
+  animation: width0 3.5s,typing 0.5s steps(30, end) 3.5s ;
+    }
+    #crs5{
+  animation: width0 4s,typing 0.5s steps(30, end) 4s ;
+    }
+    #crs6{
+  animation: width0 4.5s,typing 0.5s steps(30, end) 4.5s ;
+    }
+  
+    @keyframes width0 {
+    0%{
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+    }
+    @keyframes typing {
+    0%{
+      width: 0;
+    }
+    100% {
+      width: 60%;
+    }
+    }
+
+
+    
+    /* main div ke andar .showdivclass ka css  */
+
+  #maindiv  .showdivclass {
+    position: absolute;
+     display: none;
+     flex-direction: column;
+       background: rgba(187, 186, 186, 0.8);
+       width: 55vw;
+       height: 90vh;
+      bottom: 0;
+       right: 0;
+    animation: showcourse 3s ease-out;
+  }
+
+
+.showdivclass h2{
+    color: red;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 1.5vw;
+  }
+.showdivclass h2:nth-child(2) {
+    margin-top: 2%;
+    text-decoration: underline;
+    color: black;
+    margin-bottom: 3%;
+  }
+
+
+#maindiv .showdivclass p {
+  font-size: 1vw;
+  text-align: center;
+}
+#maindiv #showdiv h3 {
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 1%;
+  font-size: 1.5vw;
+  text-align: center;
+}
+  
+
+
+/* adca dca dcaa ke show div ka styling */
+  
+  #mswin {
+    display: flex;
+    width: 100%;
+    height: 30%;
+  }
+  #mswin div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+  }
+  #mswin div h3 {
+    border: 1px solid grey;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 1vw;
+    text-align: center;
+  }
+  #mswin div p:first-child {
+    margin-top: 10%;
+  }
+  
+  #frt {
+    display: flex;
+    width: 100%;
+    height: 30%;
+  }
+  #frt div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+  }
+  #frt div h3 {
+    border: 1px solid grey;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 1vw;
+    text-align: center;
+  }
+  
+  #courses {
+    color: black;
+    background-color: white;
+  }
+  
+  
+  
+  
+  .showdiv3{
+    padding-left: 7%;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 1%; */
+  }
+
+  
+  .showdiv3 p{
+    margin-left: 5%;
+    letter-spacing: 0.05rem;
+  }
+  .showdiv3 p::before{
+    content: "• ";
+  }
+  
+  .atlast{
+    border: 1px solid black;
+    margin-top: 1%;
+    text-align: center;
+  }
+  #online{
+    margin-top: 2%;
+  }
+
+  #prlangp , #sh6prlangp ,#sh8prlangp ,#sh10prlangp,#sh12prlangp{
+    margin: 3% 5%;
+    margin-left: 0;
+  }
+  
+  
+
+
+
+  #shhtmllasth3, #sh6lasth3 ,#sh8lasth3,#sh10lasth3,#sh12lasth3,#sh14lasth3{
+    text-align: center;
+    margin-top: 3.8%;
+  }
+
+  
+  @keyframes showcourse {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+    @media screen and (max-width: 800px) {
+  
+ 
+      section #nav{
+        height: 15vh;
+      }
+  
+  section #nav a {
+    width: 20%;
+  font-size:6vw;
+  margin-top: 3vh;
+  
+  
+  }
+  section #nav a h2{
+    width: 100%;
+  font-size: 60%;
+  }
+  section #nav a:last-child {
+    margin-right: 0;
+  }
+  nav span{
+  display: none;
+  }
+  
+
+  #maindiv{
+    flex-direction: column;
+    margin-top: 0;
+    height: 85vh;
+  }
+
+  #maindiv #listdiv{
+        width: 100%;
+        height: 30vh;
+      }
+  #maindiv #listdiv h1{
+     margin-top: 0;
+      
+      }
+  #maindiv #listdiv p{
+        font-size: 2.3vw;
+      
+      }
+      
+  
+  #maindiv .showdivclass{
+        width: 100vw;
+        height: 55vh;
+      }
+
+      .showdivclass h2:nth-child(2) {
+        font-size: 3.7vw;
+        margin-bottom: 0.15vh;
+      }
+
+      .showdiv3 h3{
+        font-size: 3.3vw;
+        margin-top: 0;
+      }
+      #maindiv .showdivclass .showdiv3 h2{
+        font-size: 2vw;
+      }
+      #maindiv .showdivclass .showdiv3 p{
+        font-size: 2vw;
+      }
+
+      .showdivclass h4{
+        font-size: 2vw;
+        margin-top: 0.15vh;
+      }
+
+      /* it is for dca adca mobile applicability */
+#showdiv h2 {
+        font-size: 3.3vw;
+      }
+#showdiv #mswin h3 {
+        font-size: 3.3vw;
+      }
+#showdiv #mswin p {
+        font-size: 3vw;
+      }
+#showdiv #frt h3{
+        font-size: 3.3vw;
+      }
+      #showdiv #frt p {
+        font-size: 3vw;
+      }
+      #maindiv #showdiv h3 {
+        font-size: 3vw;
+      }
+      
+
+      /* end of mobile applicability of adca dca */
+
+
+
+  
+
+
+    }
+
+
+    /* show div 8 start here */
+
+
+    .showdiv3 h4{
+text-align: center;
+margin: 2%;
+    }
+
+    .sh14prlangp{
+      margin: 0% 0%;
+      margin-left: 0;
+    }
+
+
+
+#maindiv .showdiv3 p{
+text-align: left;
+
+}
+#maindiv .showdiv3 h3{
+text-align: left;
+margin-top: 1vh;
+
+}
